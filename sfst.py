@@ -15,7 +15,7 @@ def saveJson(jdata: dict, filepath:str) -> None:
         fw.write(dumps(jdata, indent=2, ensure_ascii=False))
     pass
 
-def checkmake(dirpath: str) -> Boolean:
+def checkMake(dirpath: str) -> Boolean:
     if isdir(dirpath)==True:
         pass
         return True
