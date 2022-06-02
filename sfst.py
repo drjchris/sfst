@@ -10,7 +10,7 @@ def openJson(filepath:str) -> dict:
         outdict = loads(fr.read())
     return outdict
 
-def saveJson(jdata: dict, filepath:str, indent=2) -> None:
+def saveJson(jdata: dict, filepath:str, indent=None) -> None:
     with open(filepath, 'w') as fw:
         fw.write(dumps(jdata, indent=indent, ensure_ascii=False))
     pass
