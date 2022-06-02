@@ -10,9 +10,9 @@ def openJson(filepath:str) -> dict:
         outdict = loads(fr.read())
     return outdict
 
-def saveJson(jdata: dict, filepath:str) -> None:
+def saveJson(jdata: dict, filepath:str, indent=2) -> None:
     with open(filepath, 'w') as fw:
-        fw.write(dumps(jdata, indent=2, ensure_ascii=False))
+        fw.write(dumps(jdata, indent=indent, ensure_ascii=False))
     pass
 
 def checkMake(dirpath: str) -> Boolean:
