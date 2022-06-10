@@ -7,3 +7,4 @@
     readJson('input.json')           # opens JSON file
     saveJson(jdata, 'output.json')   # saves data in JSON format
     checkMake('pathtodir')           # checks if dir exists, makes if not
+    listFiles('pathtodir)            # lists all files in the dir removes hidden
