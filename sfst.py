@@ -2,6 +2,7 @@ from genericpath import isdir
 from json import loads, dumps
 from os.path import isdir
 from os import makedirs
+from os import listdir
 from xmlrpc.client import Boolean
 
 # # json i/o files
@@ -22,3 +23,7 @@ def checkMake(dirpath: str) -> Boolean:
     if isdir(dirpath)==False:
         makedirs(dirpath)
         return False
+
+# lists all files in a dir and removes hidden ones
+def listFiles(dirpath: str) -> list:
+    return [x for x in listdir(dirpath) if x[0]!='.']
