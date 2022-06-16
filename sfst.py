@@ -5,6 +5,8 @@ from os import makedirs
 from os import listdir
 from xmlrpc.client import Boolean
 
+from datetime import datetime
+
 # # json i/o files
 def openJson(filepath:str) -> dict:
     with open(filepath, 'r') as fr:
@@ -27,3 +29,6 @@ def checkMake(dirpath: str) -> Boolean:
 # lists all files in a dir and removes hidden ones
 def listFiles(dirpath: str) -> list:
     return [x for x in listdir(dirpath) if x[0]!='.']
+
+def dtnow():
+    return datetime.now().strftime("%Y%m%d%H%M%S")
