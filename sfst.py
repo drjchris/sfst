@@ -30,5 +30,5 @@ def checkMake(dirpath: str) -> Boolean:
 def listFiles(dirpath: str) -> list:
     return [x for x in listdir(dirpath) if x[0]!='.']
 
-def dtnow():
+def dtNow():
     return datetime.now().strftime("%Y%m%d%H%M%S")
