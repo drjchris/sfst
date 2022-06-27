@@ -18,6 +18,9 @@ def writeJson(jdata: dict, filepath:str, indent=None) -> None:
         fw.write(dumps(jdata, indent=indent, ensure_ascii=False))
     pass
 
+def printJson(jdata: dict) -> string:
+    return json.dumps(jdata, indent=2, ensure_ascii=False)
+
 def checkMake(dirpath: str) -> Boolean:
     if isdir(dirpath)==True:
         pass
