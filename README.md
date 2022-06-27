@@ -4,8 +4,8 @@
 
 ## Available functions
 
-    readJson('input.json')           # opens JSON file
-    saveJson(jdata, 'output.json')   # saves data in JSON format
+    readJson('input.json')           # opens and reads JSON file
+    writeJson(jdata, 'output.json')  # writes data in JSON format
     checkMake('pathtodir')           # checks if dir exists, makes if not
     listFiles('pathtodir)            # lists all files in the dir removes hidden
     dtNow()                          # date time now - eg. 19770504160356
